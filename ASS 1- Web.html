@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nature's Lens Photography</title>
+    <style>
+        /* Global Styles */
+        body {
+            font-family: sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        header {
+            background-color: #120323;
+            color: #97bf04;
+            text-align: center;
+            padding: 20px;
+        }
+
+        header img {
+            width: 100px;
+            display: block;
+            margin: 0 auto;
+        }
+
+        h1 {
+            margin: 10px 0;
+            font-weight: bold;
+        }
+
+        main {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 20px;
+        }
+
+        p {
+            margin: 15px 0;
+        }
+
+        img.puffin {
+            max-width: 100%;
+            height: auto;
+            display: block;
+            margin: 20px auto;
+            border: 5px solid #d9043d;
+        }
+
+        /* Sidebar Styles */
+        .sidebar {
+            background-color: #97bf04;
+            color: white;
+            padding: 15px;
+            margin: 20px;
+        }
+
+        .sidebar h2 {
+            margin-top: 0;
+        }
+
+        /* Footer Styles */
+        footer {
+            background-color: #d9043d;
+            color: white;
+            text-align: center;
+            padding: 10px;
+        }
+
+        /* Responsive Styles */
+
+        /* For screens less than 768px wide */
+        @media (max-width: 768px) {
+            header img {
+                width: 80px;
+            }
+
+            header h1 {
+                font-size: 1.5rem;
+            }
+
+            img.puffin {
+                width: 100%;
+            }
+        }
+
+        /* For screens between 768px and 1000px */
+        @media (min-width: 769px) and (max-width: 999px) {
+            header {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+
+            header img {
+                width: 80px;
+                margin-right: 20px;
+            }
+
+            main {
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                align-items: flex-start;
+                max-width: 1000px;
+            }
+
+            .puffin-container {
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+            }
+
+            img.puffin {
+                max-width: 300px;
+                margin: 0;
+            }
+
+            p {
+                max-width: 500px;
+                margin-left: 20px;
+            }
+
+            .sidebar {
+                width: 100%;
+            }
+        }
+
+        /* For screens wider than 1000px */
+        @media (min-width: 1000px) {
+            header {
+                display: flex;
+                justify-content: space-between;
+                padding: 20px 50px;
+            }
+
+            main {
+                display: flex;
+                justify-content: space-between;
+                max-width: 1200px;
+                margin: 0 auto;
+            }
+
+            .puffin-container {
+                display: flex;
+                width: 50%;
+            }
+
+            img.puffin {
+                max-width: 300px;
+            }
+
+            .sidebar {
+                width: 25%;
+                margin-left: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="logo.png" alt="Nature's Lens Photography Logo">
+        <h1>Nature's Lens Photography</h1>
+    </header>
+
+    <main>
+        <div class="puffin-container">
+            <img src="puffin-square.webp" alt="Puffin Image" class="puffin">
+            <p>Puffins are any of three species of small alcids (auks) in the bird genus Fratercula. These are pelagic seabirds that feed primarily by diving in the water. They breed in large colonies on coastal cliffs or offshore islands, nesting in crevices among rocks or in burrows in the soil. Two species, the tufted puffin and horned puffin, are found in the North Pacific Ocean, while the Atlantic puffin is found in the North Atlantic Ocean.</p>
+        </div>
+
+        <aside class="sidebar">
+            <h2>Become A Patreon Subscriber</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam sit amet euismod sem, id sagittis urna. Vestibulum laoreet magna vel leo gravida, non dignissim magna imperdiet.</p>
+            <h2>Watch Our Weekly Video Podcast</h2>
+            <p>Vestibulum varius magna lacinia, dignissim sem sit amet, molestie massa. Nulla facilisi. Etiam at lorem non eros ultrices venenatis.</p>
+        </aside>
+    </main>
+
+    <footer>
+        <p>Nature's Lens Photography is a division of the School for Advanced Digital Technology (SADT) at the Southern Alberta Institute of Technology.</p>
+    </footer>
+</body>
+</html>
